@@ -37,7 +37,7 @@
                 <input type="email" name="email" id="email" class="form-control fadeIn second" placeholder="Enter your email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
             </div>
             <div class="form-group">
-                <input type="phone_number" name="phone_number" id="phone_number" class="form-control fadeIn second" placeholder="Enter your phone number" pattern="^[0-9]" required>
+                <input type="phone_number" name="phone_number" id="phone_number" class="form-control fadeIn second" placeholder="Enter your phone number" pattern="^\+?\d{0,13}" required>
             </div>
             <div class="form-group">
                 <input type="username" name="username" id="username" class="form-control fadeIn second" placeholder="Enter username" pattern="^(?=.{4,20}$)(?:[a-zA-Z\d]+(?:(?:\.|-|_)[a-zA-Z\d])*)+$" required>
@@ -45,7 +45,7 @@
             <div class="form-group">
                 <input type="password" class="form-control fadeIn third" id="password" name="password" placeholder="Enter password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
             </div>
-            <input onclick="register()" type="submit" class="btn fadeIn fourth" id="sign-up-btn" value="Sign Up"></input>
+            <input onclick="" type="submit" class="btn fadeIn fourth" id="sign-up-btn" value="Sign Up"></input>
         </form>
     </div>
     <?php include('./includes/javascript.php'); ?>
