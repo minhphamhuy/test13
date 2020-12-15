@@ -2,21 +2,16 @@ language: php
 
 php:
   - 7.3.8
-
+  - nightly
 services:
   - mysql
-
-install:
-  - composer install
-  - composer dump -o
+dist: trusty
+install: composer install --no-ansi --no-interaction --no-progress --prefer-dist
 
 cache:
   directories:
   - vendor
-
-script:
-  - phpunit --coverage-clover build/logs/clover.xml
-
+script: vendor/bin/phpunit
 after_success:
   - composer require php-coveralls/php-coveralls
   - travis_retry php vendor/bin/php-coveralls
