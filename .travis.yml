@@ -6,12 +6,16 @@ php:
   - 7.0
   - 7.1
   - hhvm
+  - DB=mysql
 dist: trusty
 # Commands to be run before your environment runs.
+services:
+ - mysql
 
 # Commands you want to run that will verify your build.
 script: phpunit
-
+env:
+ - SYMFONY_VERSION="3.0.*" DB=mysql
 # allow_failures: Allow this build to fail under the specified environments.
 # fast_finish: If your build fails do not continue trying to build, just stop.
 matrix:
@@ -20,7 +24,3 @@ matrix:
     - php: hhvm
   fast_finish: true
 
-# Customize when the notification emails are sent.
-notifications:
-    on_success: never
-    on_failure: always
