@@ -5,15 +5,15 @@ language: php
 php:
   - 7.0
   - 7.1
-  - hhvm
-  - DB=mysql
+install: composer install --no-ansi --no-interaction --no-progress --prefer-dist
+ 
 dist: trusty
 # Commands to be run before your environment runs.
 services:
  - mysql
 
 # Commands you want to run that will verify your build.
-script: phpunit
+script: vendor/bin/phpunit
 env:
  - SYMFONY_VERSION="3.0.*" DB=mysql
 # allow_failures: Allow this build to fail under the specified environments.
@@ -21,6 +21,6 @@ env:
 matrix:
   allow_failures:
     - php: 7.0
-    - php: hhvm
+  
   fast_finish: true
 
