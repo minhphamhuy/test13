@@ -2,16 +2,6 @@ language: php
 
 php:
   - 7.3.8
-  - nightly
+  - 7.1
 services:
   - mysql
-dist: trusty
-install: composer install --no-ansi --no-interaction --no-progress --prefer-dist
-
-cache:
-  directories:
-  - vendor
-script: vendor/bin/phpunit
-after_success:
-  - composer require php-coveralls/php-coveralls
-  - travis_retry php vendor/bin/php-coveralls
