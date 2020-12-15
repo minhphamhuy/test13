@@ -2,11 +2,8 @@
 <phpunit>
     <testsuite>
         <testsuite name="testing">
-            <directory suffix='.php'>./pages </directory>
-            <directory suffix='.php'>./scripts </directory>
-            <directory suffix='.php'>./css </directory>
-            <directory suffix='.php'>./pages </directory>
-            <directory suffix='.php'>./includes </directory>
+            <directory suffix='.php'>./phptest </directory>
+          
         </testsuite>
     </testsuite>
 </phpunit>
