@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpunit>
-    
+    <testsuites>
         <testsuite name="testing">
           
             <directory suffix='.php'>./scripts </directory>
             <directory suffix='.php'>./css </directory>
-         
+            <directory >./phptest </directory>
            
-        </testsuite>
    
+    </testsuite>
+</testsuites>
 </phpunit>
