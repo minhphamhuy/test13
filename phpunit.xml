@@ -6,7 +6,7 @@
             <directory suffix='.php'>./scripts </directory>
        
          
-            <directory suffix='.php'>./includes </directory>
+           
         </testsuite>
     </testsuite>
 </phpunit>
