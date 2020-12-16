@@ -3,6 +3,8 @@ language: php
 php:
   - 7.3.8
   - 7.2
+install: 
+  - composer install
 services:
   - mysql
 script: php phptest/testing.php
