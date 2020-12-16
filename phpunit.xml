@@ -3,7 +3,7 @@
  
         <testsuite name="testing">
           
-            <directory suffix='.php'>./includes </directory>
+            <directory suffix='.php'>./css </directory>
        
          
            
