@@ -1,7 +1,7 @@
 <?php
 namespace Tests;
 
-
+require_once 'PHPUnit/Autoload.php';
 use PHPUnit\Framework\TestCase;
 
 class tooltest extends TestCase
