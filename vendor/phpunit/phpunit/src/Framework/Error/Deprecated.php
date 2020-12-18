@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 /*
  * This file is part of PHPUnit.
  *
@@ -10,14 +10,8 @@
 namespace PHPUnit\Framework\Error;
 
 /**
- * Wrapper for PHP deprecated errors.
- * You can disable deprecated-to-exception conversion by setting
- *
- * <code>
- * PHPUnit_Framework_Error_Deprecated::$enabled = false;
- * </code>
+ * @internal
  */
-class Deprecated extends Error
+final class Deprecated extends Error
 {
-    public static $enabled = true;
 }

@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 /*
  * This file is part of PHPUnit.
  *
@@ -10,14 +10,8 @@
 namespace PHPUnit\Framework\Error;
 
 /**
- * Wrapper for PHP warnings.
- * You can disable notice-to-exception conversion by setting
- *
- * <code>
- * PHPUnit_Framework_Error_Warning::$enabled = false;
- * </code>
+ * @internal
  */
-class Warning extends Error
+final class Warning extends Error
 {
-    public static $enabled = true;
 }
